@@ -6,11 +6,17 @@
         "title": "Slave API"
     },
     "host": "",
-    "basePath": "",
-    "tags": [{
-        "name": "utility",
-        "description": "Utility operations for project support"
-    }],
+    "basePath": "/v1",
+    "tags": [
+        {
+            "name": "utility",
+            "description": "Utility operations for project support"
+        },
+        {
+            "name": "opengraph",
+            "description": "OpenGraph data retrieval operations"
+        }
+    ],
     "schemes": ["http", "https"],
     "paths": {
         "/utility/file-conversion": {
@@ -76,13 +82,238 @@
                 },
                 "security": []
             }
+        },
+        "/opengraph/description": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get OpenGraph description",
+                "description": "Retrieve the OpenGraph description for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch description"
+                    }
+                },
+                "security": []
+            }
+        },
+        "/opengraph/title": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get OpenGraph title",
+                "description": "Retrieve the OpenGraph title for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch title"
+                    }
+                },
+                "security": []
+            }
+        },
+        "/opengraph/locale": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get OpenGraph locale",
+                "description": "Retrieve the OpenGraph locale for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch locale"
+                    }
+                },
+                "security": []
+            }
+        },
+        "/opengraph/requestUrl": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get OpenGraph request URL",
+                "description": "Retrieve the OpenGraph request URL for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch request URL"
+                    }
+                },
+                "security": []
+            }
+        },
+        "/opengraph/image": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get OpenGraph image",
+                "description": "Retrieve the OpenGraph image URL for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch image"
+                    }
+                },
+                "security": []
+            }
+        },
+        "/opengraph/all": {
+            "get": {
+                "tags": ["opengraph"],
+                "summary": "Get all OpenGraph data",
+                "description": "Retrieve all OpenGraph data for a given URL",
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "description": "URL to fetch OpenGraph data from",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/OpenGraphAllResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid URL parameter"
+                    },
+                    "500": {
+                        "description": "Failed to fetch OpenGraph data"
+                    }
+                },
+                "security": []
+            }
         }
     },
     "securityDefinitions": {},
     "definitions": {
         "ApiResponse": {
             "type": "object",
+            "properties": {}
+        },
+        "OpenGraphResponse": {
+            "type": "object",
             "properties": {
+                "ogDescription": {
+                    "type": "string"
+                },
+                "ogTitle": {
+                    "type": "string"
+                },
+                "ogLocale": {
+                    "type": "string"
+                },
+                "requestUrl": {
+                    "type": "string"
+                },
+                "ogImage": {
+                    "type": "string"
+                }
+            }
+        },
+        "OpenGraphAllResponse": {
+            "type": "object",
+            "properties": {
+                "ogTitle": {
+                    "type": "string"
+                },
+                "ogDescription": {
+                    "type": "string"
+                },
+                "ogLocale": {
+                    "type": "string"
+                },
+                "requestUrl": {
+                    "type": "string"
+                },
+                "ogImage": {
+                    "type": "string"
+                }
             }
         }
     },
