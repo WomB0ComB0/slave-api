@@ -17,7 +17,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Santosh Shinde",
+  "author": "Mike Odnis",
   "license": "Apache-2.0",
   "dependencies": {
     "@types/express": "^4.17.21",
