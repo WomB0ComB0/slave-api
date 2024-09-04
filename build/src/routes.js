@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = registerRoutes;
 const express_1 = require("express");
 const system_status_controller_1 = __importDefault(require("./components/system-status/system-status.controller"));
-const controllers_1 = require("@/controllers");
+const controllers_1 = require("./controllers");
 /**
  * Here, you can register routes by instantiating the controller.
  *

@@ -11,7 +11,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The issue tracker is the preferred channel for [bug reports](https://github.com/santoshshinde2012/node-boilerplate/issues),
-[features requests](https://github.com/santoshshinde2012/node-boilerplate/discussions) and [submitting pull
-requests](https://github.com/santoshshinde2012/node-boilerplate/pulls).
+The issue tracker is the preferred channel for [bug reports](https://github.com/WomB0ComB0/slave-api/issues),
+[features requests](https://github.com/WomB0ComB0/slave-api/discussions) and [submitting pull
+requests](https://github.com/WomB0ComB0/slave-api/pulls).
 

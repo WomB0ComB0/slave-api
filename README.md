@@ -1,4 +1,4 @@
-# [slave-api](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)
+# [slave-api](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WomB0ComB0_slave-api&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=WomB0ComB0_slave-api)
 
 Skeleton for Node.js applications written in TypeScript
 
@@ -38,11 +38,11 @@ Try it!! I am happy to hear your feedback or any kind of new features.
 
 # [Start the application](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)
 
-![Workflow](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/environment.jpg?raw=true)
+![Workflow](https://github.com/WomB0ComB0/salve-api/blob/master/wiki/environment.jpg?raw=true)
 
 ## Start The application in Development Mode
 
-- Clone the Application `git clone https://github.com/santoshshinde2012/node-boilerplate.git`
+- Clone the Application `git clone https://github.com/WomB0ComB0/salve-api.git`
 - Install the dependencies `npm install`
 - Start the application `npm run dev`
 
@@ -71,7 +71,7 @@ Try it!! I am happy to hear your feedback or any kind of new features.
 
 ## Workflow
 
-![Workflow](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/boilerplate-components.jpg?raw=true)
+![Workflow](https://github.com/WomB0ComB0/salve-api/blob/master/wiki/boilerplate-components.jpg?raw=true)
 
 ## Encryption
 
@@ -91,7 +91,7 @@ The swagger documentation is available at the following url `${host}/docs`:
 - `${host}/system/process` -  Return the process details in response
 - `${host}/system/error` - Return the error generated object in response
 
-![Swagger API Documentation](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/swagger-api-documentation.jpg?raw=true)
+![Swagger API Documentation](https://github.com/WomB0ComB0/salve-api/blob/master/wiki/swagger-api-documentation.jpg?raw=true)
 
 ### [Postman Collections](wiki/postman/node-boilerplate.postman_collection.json)
 

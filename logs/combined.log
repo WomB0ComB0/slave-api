@@ -6,3 +6,15 @@
 {"level":"info","message":"Listening on :::3000"}
 {"level":"info","message":"Listening on :::3000"}
 {"level":"info","message":"Listening on :::3000"}
+{"level":"info","message":"Listening on :::3000"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"level":"error","message":"TypeError: listener is not a function\n    at Server.<anonymous> (file:///C:/Users/airwo/AppData/Roaming/npm/node_modules/vercel/node_modules/@vercel/node/dist/dev-server.mjs:1072:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"level":"error","message":"TypeError: listener is not a function\n    at Server.<anonymous> (file:///C:/Users/airwo/AppData/Roaming/npm/node_modules/vercel/node_modules/@vercel/node/dist/dev-server.mjs:1072:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"info","message":"Listening on :::8080"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"level":"error","message":"TypeError: listener is not a function\n    at Server.<anonymous> (file:///C:/Users/airwo/AppData/Roaming/npm/node_modules/vercel/node_modules/@vercel/node/dist/dev-server.mjs:1072:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"level":"error","message":"TypeError: listener is not a function\n    at Server.<anonymous> (file:///C:/Users/airwo/AppData/Roaming/npm/node_modules/vercel/node_modules/@vercel/node/dist/dev-server.mjs:1072:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+{"level":"error","message":"Unhandled Promise Rejection: reason:"}
+{"level":"error","message":"TypeError: listener is not a function\n    at Server.<anonymous> (file:///C:/Users/airwo/AppData/Roaming/npm/node_modules/vercel/node_modules/@vercel/node/dist/dev-server.mjs:1072:12)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}

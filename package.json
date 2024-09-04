@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node build/src/server.js",
     "dev": "nodemon index.js",
-    "build": "tsc -p . && cp package.json ./build/package.json && cp bun.lockb ./build/bun.lockb && cp .env ./build/.env",
+    "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint --fix src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\"",

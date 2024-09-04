@@ -28,7 +28,7 @@ export default class App {
 		this.routes();
 
 		// The error handler must be before any other error middleware and after all controllers
-		this.express.use(Sentry.expressErrorHandler);
+		// this.express.use(Sentry.expressErrorHandler);
 
 		// add the custom error handler
 		this.express.use(addErrorHandler);
