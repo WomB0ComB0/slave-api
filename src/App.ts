@@ -1,3 +1,5 @@
+import './instrument'
+
 import cors from 'cors';
 import express from 'express';
 import http from 'http';
@@ -7,23 +9,28 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from '../swagger.json';
 import registerRoutes from './routes';
 import addErrorHandler from './middleware/error-handler';
+import * as Sentry from '@sentry/node';
 
 export default class App {
 	public express: express.Application;
-
 	public httpServer: http.Server;
 
-	public async init(): Promise<void> {
+	constructor() {
 		this.express = express();
 		this.httpServer = http.createServer(this.express);
+	}
 
+	public async init(): Promise<void> {
 		// add all global middleware like cors
 		this.middleware();
 
-		// // register the all routes
+		// register all routes
 		this.routes();
 
-		// add the middleware to handle error, make sure to add if after registering routes method
+		// The error handler must be before any other error middleware and after all controllers
+		this.express.use(Sentry.expressErrorHandler);
+
+		// add the custom error handler
 		this.express.use(addErrorHandler);
 
 		// In a development/test environment, Swagger will be enabled.
@@ -67,7 +74,7 @@ export default class App {
 	private parseRequestHeader(
 		req: express.Request,
 		res: express.Response,
-		next: Function,
+		next: express.NextFunction,
 	): void {
 		// parse request header
 		// console.log(req.headers.access_token);

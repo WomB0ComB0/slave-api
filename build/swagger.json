@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Slave API for utility operations to support various projects",
+        "version": "1.0.0",
+        "title": "Slave API"
+    },
+    "host": "",
+    "basePath": "",
+    "tags": [{
+            "name": "utility",
+            "description": "Utility operations for project support"
+        }],
+    "schemes": ["http", "https"],
+    "paths": {
+        "/utility/file-conversion": {
+            "post": {
+                "tags": ["utility"],
+                "summary": "Convert file format",
+                "description": "Convert a file from one format to another",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/ApiResponse"
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
+        "/utility/image-resize": {
+            "post": {
+                "tags": ["utility"],
+                "summary": "Resize image",
+                "description": "Resize an image to specified dimensions",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/ApiResponse"
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
+        "/utility/data-validation": {
+            "post": {
+                "tags": ["utility"],
+                "summary": "Validate data",
+                "description": "Validate data against a specified schema",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/ApiResponse"
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
+        "/utility/text-processing": {
+            "post": {
+                "tags": ["utility"],
+                "summary": "Process text",
+                "description": "Perform various text processing operations",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/ApiResponse"
+                        }
+                    }
+                },
+                "security": []
+            }
+        }
+    },
+    "securityDefinitions": {},
+    "definitions": {
+        "ApiResponse": {
+            "type": "object",
+            "properties": {}
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Slave API",
+        "url": "https://your-documentation-url.com"
+    }
+}
