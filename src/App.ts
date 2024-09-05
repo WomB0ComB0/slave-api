@@ -11,6 +11,7 @@ import swag from '../swagger.json';
 import addErrorHandler from './middleware/error-handler';
 import { Api } from './myApi';
 import registerRoutes from './routes';
+import path from 'path';
 
 export default class App {
   public express: express.Application;
@@ -105,19 +106,24 @@ export default class App {
   }
 
   private setupSwaggerDocs(): void {
-    const swaggerUICss = 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui.css';
-    const swaggerUIBundleJs =
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-bundle.js';
-    const swaggerUIPresetJs =
-      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui-standalone-preset.js';
+    const swaggerUiAssetPath = require('swagger-ui-dist').getAbsoluteFSPath();
 
+    this.express.use('/api-docs', express.static(swaggerUiAssetPath));
+
+    // Setup Swagger UI
     this.express.use(
       '/api-docs',
       swaggerUi.serve,
       swaggerUi.setup(swag, {
-        customCss: swaggerUICss,
-        customJs: [swaggerUIBundleJs, swaggerUIPresetJs].join(','),
-      }),
+        swaggerOptions: {
+          url: '/swagger.json',
+        },
+        customCssUrl: 'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.14/swagger-ui.css'
+      })
     );
+
+    this.express.get('/swagger.json', (req, res) => {
+      res.sendFile(path.join(__dirname, '../swagger.json'));
+    });
   }
 }

@@ -2,24 +2,34 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/server.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/server.ts"
+      "use": "@vercel/node",
+      "src": "src/server.ts"
     }
   ],
   "headers": [
     {
       "source": "/api-docs/(.*\\.css)",
-      "headers": [{ "key": "Content-Type", "value": "text/css" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css"
+        }
+      ]
     },
     {
       "source": "/api-docs/(.*\\.js)",
-      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "src/server.ts"
     }
   ],
   "outputDirectory": "build",
