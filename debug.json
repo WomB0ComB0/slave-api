@@ -1,14 +1,14 @@
 {
   "numFailedTestSuites": 0,
   "numFailedTests": 0,
-  "numPassedTestSuites": 0,
-  "numPassedTests": 0,
+  "numPassedTestSuites": 6,
+  "numPassedTests": 26,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 0,
-  "numTotalTests": 0,
+  "numTotalTestSuites": 6,
+  "numTotalTests": 26,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,8 +26,593 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1725439768809,
+  "startTime": 1725504494611,
   "success": true,
-  "testResults": [],
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497509,
+        "runtime": 2316,
+        "slow": false,
+        "start": 1725504495193
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\lib\\crypto.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["Crypto Lib (Encryption/Decryption)"],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Crypto Lib (Encryption/Decryption) Testing for text",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 10
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Testing for text"
+        },
+        {
+          "ancestorTitles": ["Crypto Lib (Encryption/Decryption)"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Crypto Lib (Encryption/Decryption) Testing for array",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 17
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Testing for array"
+        },
+        {
+          "ancestorTitles": ["Crypto Lib (Encryption/Decryption)"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Crypto Lib (Encryption/Decryption) Testing for object",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 24
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Testing for object"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497563,
+        "runtime": 2183,
+        "slow": false,
+        "start": 1725504495380
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\dummy.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["Dummy Test Cases"],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Dummy Test Cases Verify Jest is working",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 4
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Verify Jest is working"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497713,
+        "runtime": 2367,
+        "slow": false,
+        "start": 1725504495346
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\lib\\logger.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["Logger Lib"],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Logger Lib should create a new log directory if one doesn't already exist",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 13
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should create a new log directory if one doesn't already exist"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 4,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497739,
+        "runtime": 2420,
+        "slow": false,
+        "start": 1725504495319
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\middleware\\error-handler.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["ErrorHandler middleware"],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ErrorHandler middleware with 0 status code",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 19
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "with 0 status code"
+        },
+        {
+          "ancestorTitles": ["ErrorHandler middleware"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ErrorHandler middleware with 200 status code",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 41
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "with 200 status code"
+        },
+        {
+          "ancestorTitles": ["ErrorHandler middleware"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ErrorHandler middleware with 200 status code",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 63
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "with 200 status code"
+        },
+        {
+          "ancestorTitles": ["ErrorHandler middleware"],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "ErrorHandler middleware with 200 status code and updated env variables",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 85
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "with 200 status code and updated env variables"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 10,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497750,
+        "runtime": 2618,
+        "slow": false,
+        "start": 1725504495132
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\components\\SystemStatusController.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getError method",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 25
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getError method"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getSystemInfo method",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 30
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getSystemInfo method"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getSystemInfo method with updated env variables",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 36
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getSystemInfo method with updated env variables"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getSystemInfo method with exception",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 44
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getSystemInfo method with exception"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getServerTime method",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 52
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getServerTime method"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getServerTime method with exception",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 59
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getServerTime method with exception"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getResourceUsage method",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 67
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getResourceUsage method"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getResourceUsage method with exception",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 74
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getResourceUsage method with exception"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getProcessInfo method",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 82
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getProcessInfo method"
+        },
+        {
+          "ancestorTitles": ["System Status Controller"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "System Status Controller test getProcessInfo method with exception",
+          "invocations": 1,
+          "location": {
+            "column": 3,
+            "line": 89
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "test getProcessInfo method with exception"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1725504497875,
+        "runtime": 2501,
+        "slow": false,
+        "start": 1725504495374
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\airwo\\Documents\\GitHub\\slave-api\\tests\\unit-tests\\controllers\\opengraph-controller.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": ["OpenGraphController", "register"],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController register should return a router with all routes registered",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 46
+          },
+          "numPassingAsserts": 8,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return a router with all routes registered"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getDescription"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getDescription should return og description",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 60
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return og description"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getDescription"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getDescription should handle invalid URL",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 69
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle invalid URL"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getDescription"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getDescription should handle fetch error",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 78
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle fetch error"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getAllData"],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getAllData should return all og data",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 92
+          },
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should return all og data"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getAllData"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getAllData should handle invalid URL",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 115
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle invalid URL"
+        },
+        {
+          "ancestorTitles": ["OpenGraphController", "getAllData"],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "OpenGraphController getAllData should handle fetch error",
+          "invocations": 1,
+          "location": {
+            "column": 5,
+            "line": 124
+          },
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should handle fetch error"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
   "wasInterrupted": false
 }

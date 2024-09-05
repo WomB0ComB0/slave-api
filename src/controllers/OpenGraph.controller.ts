@@ -1,8 +1,8 @@
-import ogs from 'open-graph-scraper';
-import { userAgent } from '../constants';
-import type { OpenGraphScraperOptions } from 'open-graph-scraper/types/lib/types';
 import { Router } from 'express';
-import express from 'express';
+import type express from 'express';
+import ogs from 'open-graph-scraper';
+import type { OpenGraphScraperOptions } from 'open-graph-scraper/types/lib/types';
+import { userAgent } from '../constants';
 
 class OpenGraphController {
   private options: OpenGraphScraperOptions;
@@ -61,7 +61,11 @@ class OpenGraphController {
     }
   }
 
-  private async handleRequest(req: express.Request, res: express.Response, property: string): Promise<void> {
+  private async handleRequest(
+    req: express.Request,
+    res: express.Response,
+    property: string,
+  ): Promise<void> {
     const { url } = req.query;
     if (typeof url !== 'string') {
       res.status(400).json({ error: 'URL must be a string' });
@@ -104,6 +108,4 @@ class OpenGraphController {
   }
 }
 
-export {
-  OpenGraphController,
-};
+export { OpenGraphController };

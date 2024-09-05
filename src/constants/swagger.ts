@@ -1,0 +1,324 @@
+export const swag = {
+  swagger: '2.0',
+  info: {
+    description: 'Slave API for utility operations to support various projects',
+    version: '1.0.0',
+    title: 'Slave API',
+  },
+  host: '',
+  basePath: '/v1',
+  tags: [
+    {
+      name: 'utility',
+      description: 'Utility operations for project support',
+    },
+    {
+      name: 'opengraph',
+      description: 'OpenGraph data retrieval operations',
+    },
+  ],
+  schemes: ['http', 'https'],
+  paths: {
+    '/utility/file-conversion': {
+      post: {
+        tags: ['utility'],
+        summary: 'Convert file format',
+        description: 'Convert a file from one format to another',
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/ApiResponse',
+            },
+          },
+        },
+        security: [],
+      },
+    },
+    '/utility/image-resize': {
+      post: {
+        tags: ['utility'],
+        summary: 'Resize image',
+        description: 'Resize an image to specified dimensions',
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/ApiResponse',
+            },
+          },
+        },
+        security: [],
+      },
+    },
+    '/utility/data-validation': {
+      post: {
+        tags: ['utility'],
+        summary: 'Validate data',
+        description: 'Validate data against a specified schema',
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/ApiResponse',
+            },
+          },
+        },
+        security: [],
+      },
+    },
+    '/utility/text-processing': {
+      post: {
+        tags: ['utility'],
+        summary: 'Process text',
+        description: 'Perform various text processing operations',
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/ApiResponse',
+            },
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/description': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get OpenGraph description',
+        description: 'Retrieve the OpenGraph description for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch description',
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/title': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get OpenGraph title',
+        description: 'Retrieve the OpenGraph title for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch title',
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/locale': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get OpenGraph locale',
+        description: 'Retrieve the OpenGraph locale for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch locale',
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/requestUrl': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get OpenGraph request URL',
+        description: 'Retrieve the OpenGraph request URL for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch request URL',
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/image': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get OpenGraph image',
+        description: 'Retrieve the OpenGraph image URL for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch image',
+          },
+        },
+        security: [],
+      },
+    },
+    '/opengraph/all': {
+      get: {
+        tags: ['opengraph'],
+        summary: 'Get all OpenGraph data',
+        description: 'Retrieve all OpenGraph data for a given URL',
+        parameters: [
+          {
+            name: 'url',
+            in: 'query',
+            description: 'URL to fetch OpenGraph data from',
+            required: true,
+            type: 'string',
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Successful operation',
+            schema: {
+              $ref: '#/definitions/OpenGraphAllResponse',
+            },
+          },
+          '400': {
+            description: 'Invalid URL parameter',
+          },
+          '500': {
+            description: 'Failed to fetch OpenGraph data',
+          },
+        },
+        security: [],
+      },
+    },
+  },
+  securityDefinitions: {},
+  definitions: {
+    ApiResponse: {
+      type: 'object',
+      properties: {},
+    },
+    OpenGraphResponse: {
+      type: 'object',
+      properties: {
+        ogDescription: {
+          type: 'string',
+        },
+        ogTitle: {
+          type: 'string',
+        },
+        ogLocale: {
+          type: 'string',
+        },
+        requestUrl: {
+          type: 'string',
+        },
+        ogImage: {
+          type: 'string',
+        },
+      },
+    },
+    OpenGraphAllResponse: {
+      type: 'object',
+      properties: {
+        ogTitle: {
+          type: 'string',
+        },
+        ogDescription: {
+          type: 'string',
+        },
+        ogLocale: {
+          type: 'string',
+        },
+        requestUrl: {
+          type: 'string',
+        },
+        ogImage: {
+          type: 'string',
+        },
+      },
+    },
+  },
+  externalDocs: {
+    description: 'Find out more about Slave API',
+    url: 'https://your-documentation-url.com',
+  },
+};

@@ -12,6 +12,16 @@
       "dest": "src/server.ts"
     }
   ],
+  "headers": [
+    {
+      "source": "/api-docs/(.*\\.css)",
+      "headers": [{ "key": "Content-Type", "value": "text/css" }]
+    },
+    {
+      "source": "/api-docs/(.*\\.js)",
+      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
+    }
+  ],
   "outputDirectory": "build",
   "env": {
     "NODE_ENV": "production"

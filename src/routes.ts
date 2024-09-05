@@ -7,18 +7,15 @@ import { OpenGraphController } from './controllers';
  *
  */
 export default function registerRoutes(): Router {
-	const router = Router();
+  const router = Router();
 
-	const controllers = [
-		new SystemStatusController(),
-		new OpenGraphController(),
-	];
+  const controllers = [new SystemStatusController(), new OpenGraphController()];
 
-	// Dynamically register routes for each controller
-	controllers.forEach((controller) => {
-		// make sure each controller has basePath attribute and register() method
-		router.use(`/v1/${controller.basePath}`, controller.register());
-	});
+  // Dynamically register routes for each controller
+  controllers.forEach((controller) => {
+    // make sure each controller has basePath attribute and register() method
+    router.use(`/v1/${controller.basePath}`, controller.register());
+  });
 
-	return router;
+  return router;
 }
